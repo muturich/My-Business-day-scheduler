@@ -1,27 +1,30 @@
-// Display today's day and date
+//Use the moment.js library to retrieve the current data and format to be
+//be displayed on the web page using web Jquery 
+
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
 $(document).ready(function () {
-    // saveBtn click listener 
+ //Use Jquery to select all the elemetns with the class "saveBth" and add a click event listen to them
     $(".saveBtn").on("click", function () {
-        // Get nearby values of the description in JQuery
+  
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
-        // Save text in local storage
+    
         localStorage.setItem(time, text);
     })
    
     function timeTracker() {
-        //get current number of hours.
+       
         var timeNow = moment().hour();
 
-        // loop over time blocks
+//this block iterates over each time-block element and adds the classes"past",
+//"present"or"future"depending on whether the block's time is earlier,equal, or later than the current time.
         $(".time-block").each(function () {
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
-            // To check the time and add the classes for background indicators
+            
             if (blockTime < timeNow) {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
@@ -40,8 +43,9 @@ $(document).ready(function () {
             }
         })
     }
+//this sets the values of the description fields in each time-block from the values stored in the 
+//browser's local storage, and calls the timeTracker() function.
 
-    // Get item from local storage if any
     $("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
