@@ -14,3 +14,5 @@ When I am using the daily planner to organize my schedule, and I open the planne
 ## VISUAL 
 
 https://ik.imagekit.io/tsoc7yrwg/challenge5snapchat.png?updatedAt=1679701815255
+
+https://ik.imagekit.io/tsoc7yrwg/challenge5snapchat2.png?updatedAt=1679702136824
