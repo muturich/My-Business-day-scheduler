@@ -12,3 +12,5 @@ As an individual with a busy work schedule, I need a daily planner application t
 When I am using the daily planner to organize my schedule, and I open the planner, the current day should be displayed at the top of the calendar. As I scroll down, I should be presented with time blocks for standard business hours. When I view the time blocks for that day, each block should be color-coded to indicate whether it is in the past, present, or future. If I click into a time block, I can enter an event. Upon clicking the save button for that time block, the text for that event should be saved in local storage. Additionally, when I refresh the page, the saved events should persist
 
 ## VISUAL 
+
+https://ik.imagekit.io/tsoc7yrwg/challenge5snapchat.png?updatedAt=1679701815255
